@@ -12,9 +12,17 @@ namespace Application
 {
 	public class LoggerConfig
 	{
-		public LoggerConfig ()
-		{
-		}
+		public static bool Enable=true;
+		public static LoggerLevel Level=LoggerLevel.All;
+	}
+
+	public enum LoggerLevel
+	{
+		All,
+		Debug,
+		Warning,
+		Error,
+		Close
 	}
 }
 
